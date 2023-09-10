@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/AutoRent/static/css/main.2d709f4f.css",
-    "main.js": "/AutoRent/static/js/main.bf4d747f.js",
+    "main.js": "/AutoRent/static/js/main.133dd883.js",
     "index.html": "/AutoRent/index.html",
     "main.2d709f4f.css.map": "/AutoRent/static/css/main.2d709f4f.css.map",
-    "main.bf4d747f.js.map": "/AutoRent/static/js/main.bf4d747f.js.map"
+    "main.133dd883.js.map": "/AutoRent/static/js/main.133dd883.js.map"
   },
   "entrypoints": [
     "static/css/main.2d709f4f.css",
-    "static/js/main.bf4d747f.js"
+    "static/js/main.133dd883.js"
   ]
 }
