@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
             experience. We proudly serve clients throughout Ukraine.
           </p>
         </section>
+        <Link to={'/catalog'}>Go to The Car Catalog</Link>
       </main>
       <footer>
         <p>&copy; 2023 Car rental in Ukraine</p>
