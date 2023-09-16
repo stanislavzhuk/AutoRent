@@ -1,4 +1,4 @@
-import React from 'react';
+import FavoriteBtn from 'components/FavoriteBtn/FavoriteBtn';
 
 const AdvertCard = ({ advert }) => {
   const {
@@ -19,7 +19,7 @@ const AdvertCard = ({ advert }) => {
     <li>
       <div>
         <img src={img} alt={`${make}, ${model}`} loading="lazy" width={250} />
-        <button type="button">♥{favs}</button>
+        <FavoriteBtn favs={favs ? favs : false} id={id} />
       </div>
       <div>
         <h2>

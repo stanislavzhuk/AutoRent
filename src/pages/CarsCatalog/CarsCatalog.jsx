@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getAdverts } from '../../services/advertsApi';
 import AdvertCard from 'components/AdvertCard/AdvertCard';
-import { Link } from 'react-router-dom';
 import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
 
 const CarsCatalog = () => {
@@ -35,7 +34,7 @@ const CarsCatalog = () => {
             setAdverts(prev => {
               return [...prev, ...res];
             });
-            res?.length < 8 && setShowLoadrMore(false);
+          res?.length < 8 && setShowLoadrMore(false);
         } catch (e) {
           setError(e.message);
         }
@@ -45,7 +44,6 @@ const CarsCatalog = () => {
 
   return (
     <div>
-      <Link to={'/'}>Go to HomePage</Link>
       {status === 'fullfield' && (
         <ul>
           {adverts &&
