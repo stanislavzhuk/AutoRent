@@ -1,4 +1,6 @@
+import { formattedCityAddress, formattedCountryAddress } from 'components/utils/format';
 import FavoriteBtn from 'components/FavoriteBtn/FavoriteBtn';
+import css from './AdvertCard.module.css';
 
 const AdvertCard = ({ advert, openModal }) => {
   const {
@@ -16,23 +18,28 @@ const AdvertCard = ({ advert, openModal }) => {
   } = advert;
 
   return (
-    <li>
-      <div>
-        <img src={img} alt={`${make}, ${model}`} loading="lazy" width={250} />
+    <li className={css.cardItem} title={`${accessories.join('\n')}`}>
+      <div className={css.imageContainer}>
+        <img
+          className={css.image}
+          src={img}
+          alt={`${make}, ${model}`}
+          loading="lazy"
+        />
         <FavoriteBtn favs={favs ? favs : false} id={id} />
       </div>
       <div>
-        <h2>
+        <h2 className={css.cardTitle}>
           <span>
             {`${make} `}
-            <span>{`${model}`}</span>
+            <span className={css.accent}>{`${model}`}</span>
             {`, ${year}`}
           </span>
           <span>{rentalPrice}</span>
         </h2>
-        <ul>
-          <li>{address.split(',')[1].trim()}</li>
-          <li>{address.split(',')[2].trim()}</li>
+        <ul className={css.descrList}>
+          <li>{formattedCityAddress(address)}</li>
+          <li>{formattedCountryAddress(address)}</li>
           <li>{rentalCompany}</li>
           <li>{type}</li>
           <li>{model}</li>
@@ -40,7 +47,11 @@ const AdvertCard = ({ advert, openModal }) => {
           <li>{accessories[1]}</li>
         </ul>
       </div>
-      <button type="button" onClick={() => openModal(id)}>
+      <button
+        className="button-primary"
+        type="button"
+        onClick={() => openModal(id)}
+      >
         Learn more
       </button>
     </li>

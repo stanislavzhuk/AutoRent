@@ -100,7 +100,8 @@ li {
   cursor: pointer;
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-primary:focus {
   background-color: #0b44cd;
 }
 

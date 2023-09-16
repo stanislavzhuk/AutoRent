@@ -1,0 +1,16 @@
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+  row-gap: 50px;
+  padding: 50px 128px 100px 128px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  margin: 50px 10px;
+  font-family: inherit;
+}

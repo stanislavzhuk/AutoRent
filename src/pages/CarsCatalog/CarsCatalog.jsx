@@ -3,6 +3,7 @@ import { getAdverts } from '../../services/advertsApi';
 import AdvertCard from 'components/AdvertCard/AdvertCard';
 import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
 import PopUpModal from 'components/PopUpModal/PopUpModal';
+import css from './CarsCatalog.module.css';
 
 const CarsCatalog = () => {
   const [adverts, setAdverts] = useState(null);
@@ -52,8 +53,9 @@ const CarsCatalog = () => {
 
   return (
     <div>
+      <h1 className="visually-hidden">Car Rantal Catalog</h1>
       {status === 'fullfield' && (
-        <ul>
+        <ul className={css.cardList}>
           {adverts &&
             adverts.map(advert => (
               <AdvertCard
@@ -70,7 +72,9 @@ const CarsCatalog = () => {
       {showModal && (
         <PopUpModal id={carId} onClose={() => setShowModal(prev => !prev)} />
       )}
-      {status === 'rejected' && error && <div> {error} </div>}
+      {status === 'rejected' && error && (
+        <div className={css.error}> {error} </div>
+      )}
     </div>
   );
 };
