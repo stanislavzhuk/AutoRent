@@ -8,13 +8,13 @@ const Layout = () => {
       <aside>
         <ul>
           <li>
-            <NavLink to="/" >Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/catalog" >Catalog</NavLink>
+            <NavLink to="/catalog">Catalog</NavLink>
           </li>
           <li>
-            <NavLink to="/favorites" >Favorites</NavLink>
+            <NavLink to="/favorites">Favorites</NavLink>
           </li>
         </ul>
       </aside>

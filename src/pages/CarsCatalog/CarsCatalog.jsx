@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getAdverts } from '../../services/advertsApi';
 import AdvertCard from 'components/AdvertCard/AdvertCard';
 import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
+import PopUpModal from 'components/PopUpModal/PopUpModal';
 
 const CarsCatalog = () => {
   const [adverts, setAdverts] = useState(null);
@@ -9,6 +10,8 @@ const CarsCatalog = () => {
   const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
   const [showLoadMore, setShowLoadrMore] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [carId, setCarId] = useState(null);
 
   useEffect(() => {
     (async () => {
@@ -42,18 +45,30 @@ const CarsCatalog = () => {
     }
   }, [page]);
 
+  const openModal = id => {
+    setShowModal(true);
+    setCarId(id);
+  };
+
   return (
     <div>
       {status === 'fullfield' && (
         <ul>
           {adverts &&
             adverts.map(advert => (
-              <AdvertCard key={advert.id} advert={advert} />
+              <AdvertCard
+                openModal={openModal}
+                key={advert.id}
+                advert={advert}
+              />
             ))}
         </ul>
       )}
       {showLoadMore && adverts?.length > 7 && (
         <LoadMoreBtn onClick={() => setPage(prev => prev + 1)} />
+      )}
+      {showModal && (
+        <PopUpModal id={carId} onClose={() => setShowModal(prev => !prev)} />
       )}
       {status === 'rejected' && error && <div> {error} </div>}
     </div>

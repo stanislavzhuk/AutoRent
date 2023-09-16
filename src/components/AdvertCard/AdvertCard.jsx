@@ -1,6 +1,6 @@
 import FavoriteBtn from 'components/FavoriteBtn/FavoriteBtn';
 
-const AdvertCard = ({ advert }) => {
+const AdvertCard = ({ advert, openModal }) => {
   const {
     img,
     id,
@@ -40,7 +40,9 @@ const AdvertCard = ({ advert }) => {
           <li>{accessories[1]}</li>
         </ul>
       </div>
-      <button type="button">Learn more</button>
+      <button type="button" onClick={() => openModal(id)}>
+        Learn more
+      </button>
     </li>
   );
 };
