@@ -2,7 +2,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(25% - 22px);
+}
+
+@media screen and (min-width: 375px) {
+  .cardItem {
+    width: calc(100% - 12px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cardItem {
+    width: calc(50% - 24px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cardItem {
+    width: calc(25% - 22px);
+  }
 }
 
 .imageContainer {
