@@ -4,7 +4,7 @@ import css from './Home.module.css';
 
 const Home = () => {
   return (
-    <main className={css.container}>
+    <div className={css.container}>
       <img src={carImage} className={css.carImage} alt="Car" />
       <h1 className={css.heroTitle}>
         Your Journey Begins Here with{' '}
@@ -39,7 +39,7 @@ const Home = () => {
       <p className={css.copyright}>
         &copy; 2023 AutoRent. Created by Stanislav Zhuk.
       </p>
-    </main>
+    </div>
   );
 };
 

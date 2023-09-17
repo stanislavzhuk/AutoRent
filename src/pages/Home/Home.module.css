@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 30px 10px;
   max-width: 1440px;
+  height: 100vh;
 }
 
 @media screen and (min-width: 375px) {
