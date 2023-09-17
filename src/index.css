@@ -9,7 +9,7 @@ body {
   font-size: 16px;
 
   color: #121417;
-  background-color: #ecf0f1;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -114,5 +114,12 @@ li {
 
 .button-home {
   display: block;
+  margin-bottom: 100px;
   width: 200px;
+}
+
+.button-search {
+  display: block;
+  width: 136px;
+  padding: 14px 44px;
 }

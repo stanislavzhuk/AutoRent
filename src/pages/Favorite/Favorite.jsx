@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
-import { getFavotites } from '../../services/advertsApi';
+import { getAllAdverts, getFavotites, search } from '../../services/advertsApi';
+import { readFromLS, writeToLS } from 'services/localStoreApi';
+import SearchBar from 'components/SearchBar/SearchBar';
 import AdvertCard from 'components/AdvertCard/AdvertCard';
 import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
 import PopUpModal from 'components/PopUpModal/PopUpModal';
@@ -13,14 +15,23 @@ const Favorite = () => {
   const [showLoadMore, setShowLoadrMore] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [carId, setCarId] = useState(null);
+  const [isSearchActive, setIsSearchActive] = useState(false);
+  const [searchData, setSearchData] = useState(null);
+  const [shoundUpdateCache, setShoundUpdateCache] = useState(false);
 
   useEffect(() => {
     (async () => {
       setStatus('pending');
+      setShoundUpdateCache(false);
       setError(null);
       try {
+        if (!readFromLS('cars') ) {
+          const all = await getAllAdverts();
+          all && writeToLS('cars', all.data);
+        }
         const res = await getFavotites();
         res && setAdverts(res);
+        setIsSearchActive(false);
         res && setStatus('fullfield');
       } catch (e) {
         setStatus('rejected');
@@ -32,6 +43,7 @@ const Favorite = () => {
   useEffect(() => {
     if (page !== 1) {
       (async () => {
+        setShoundUpdateCache(false);
         try {
           const res = await getFavotites(page);
           res &&
@@ -46,6 +58,25 @@ const Favorite = () => {
     }
   }, [page]);
 
+  useEffect(() => {
+    (async () => {
+      if (isSearchActive) {
+        const response = await search(searchData, page, shoundUpdateCache);
+        response && setAdverts(response);
+        response && response.length >= 8 && response.length < 30
+          ? setShowLoadrMore(true)
+          : setShowLoadrMore(false);
+      }
+    })();
+  }, [isSearchActive, page, searchData, shoundUpdateCache]);
+
+  function handleSearch(data) {
+    setSearchData(data);
+    setPage(1);
+    setShowLoadrMore(true);
+    setIsSearchActive(true);
+  }
+
   const openModal = id => {
     setShowModal(true);
     setCarId(id);
@@ -54,6 +85,7 @@ const Favorite = () => {
   return (
     <div>
       <h1 className="visually-hidden">Favorites Car</h1>
+      <SearchBar onSearch={handleSearch} />
       {status === 'fullfield' && (
         <ul className={css.cardList}>
           {adverts &&
