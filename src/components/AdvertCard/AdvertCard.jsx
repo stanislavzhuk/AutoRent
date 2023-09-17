@@ -5,7 +5,7 @@ import {
 import FavoriteBtn from 'components/FavoriteBtn/FavoriteBtn';
 import css from './AdvertCard.module.css';
 
-const AdvertCard = ({ advert, openModal }) => {
+const AdvertCard = ({ advert, openModal, isChanged }) => {
   const {
     img,
     id,
@@ -29,7 +29,7 @@ const AdvertCard = ({ advert, openModal }) => {
           alt={`${make}, ${model}`}
           loading="lazy"
         />
-        <FavoriteBtn favs={favs ? favs : false} id={id} />
+        <FavoriteBtn favs={favs ? favs : false} id={id} isChanged={isChanged} />
       </div>
       <div>
         <h2 className={css.cardTitle}>

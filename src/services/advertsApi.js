@@ -36,11 +36,11 @@ export const search = async (obj, page, shouldUpdateCache) => {
     const data = readFromLS('cars');
     const result = await smartFilter(data, obj);
     return result.slice(0, page * 8);
-  };
+  }
 
   if (readFromLS('cars')) {
     const data = readFromLS('cars');
     const result = await smartFilter(data, obj);
     return result.slice(0, page * 8);
-  };
+  }
 };

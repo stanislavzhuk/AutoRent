@@ -25,7 +25,7 @@ const Favorite = () => {
       setShoundUpdateCache(false);
       setError(null);
       try {
-        if (!readFromLS('cars') ) {
+        if (!readFromLS('cars')) {
           const all = await getAllAdverts();
           all && writeToLS('cars', all.data);
         }
@@ -94,6 +94,7 @@ const Favorite = () => {
                 openModal={openModal}
                 key={advert.id}
                 advert={advert}
+                isChanged={() => setShoundUpdateCache(true)}
               />
             ))}
         </ul>

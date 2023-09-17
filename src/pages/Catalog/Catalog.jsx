@@ -5,9 +5,9 @@ import SearchBar from 'components/SearchBar/SearchBar';
 import AdvertCard from 'components/AdvertCard/AdvertCard';
 import LoadMoreBtn from 'components/LoadMoreBtn/LoadMoreBtn';
 import PopUpModal from 'components/PopUpModal/PopUpModal';
-import css from './CarsCatalog.module.css';
+import css from './Catalog.module.css';
 
-const CarsCatalog = () => {
+const Catalog = () => {
   const [adverts, setAdverts] = useState(null);
   const [status, setStatus] = useState('fullfield');
   const [error, setError] = useState(null);
@@ -25,7 +25,7 @@ const CarsCatalog = () => {
       setShoundUpdateCache(false);
       setError(null);
       try {
-        if (!readFromLS('cars') ) {
+        if (!readFromLS('cars')) {
           const all = await getAllAdverts();
           all && writeToLS('cars', all.data);
         }
@@ -94,6 +94,7 @@ const CarsCatalog = () => {
                 openModal={openModal}
                 key={advert.id}
                 advert={advert}
+                isChanged={() => setShoundUpdateCache(true)}
               />
             ))}
         </ul>
@@ -111,4 +112,4 @@ const CarsCatalog = () => {
   );
 };
 
-export default CarsCatalog;
+export default Catalog;

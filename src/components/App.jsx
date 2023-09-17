@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './Layout/Layout';
 
 const Home = lazy(() => import('../pages/Home/Home'));
-const CarsCatalog = lazy(() => import('../pages/CarsCatalog/CarsCatalog'));
+const Catalog = lazy(() => import('../pages/Catalog/Catalog'));
 const Favorite = lazy(() => import('../pages/Favorite/Favorite'));
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="catalog" element={<CarsCatalog />} />
+          <Route path="catalog" element={<Catalog />} />
           <Route path="favorites" element={<Favorite />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
