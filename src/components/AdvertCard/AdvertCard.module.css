@@ -6,13 +6,13 @@
 
 @media screen and (min-width: 375px) {
   .cardItem {
-    width: calc(100% - 12px);
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .cardItem {
-    width: calc(50% - 24px);
+    width: calc(50% - 15px);
   }
 }
 

@@ -1,0 +1,33 @@
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    row-gap: 50px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  
+  @media screen and (min-width: 375px) {
+    .cardList {
+      padding: 50px 30px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .cardList {
+      padding: 50px 100px 100px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .cardList {
+      padding: 50px 128px 100px;
+    }
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    margin: 50px 10px;
+    font-family: inherit;
+  }
