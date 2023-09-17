@@ -111,3 +111,8 @@ li {
   width: 168px;
   height: 44px;
 }
+
+.button-home {
+  display: block;
+  width: 200px;
+}
