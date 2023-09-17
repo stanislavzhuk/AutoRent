@@ -4,8 +4,14 @@
   justify-content: center;
   align-items: center;
   gap: 18px;
-  margin: 150px auto 0;
+  margin: 50px auto 0;
   width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonContainer {
+    margin: 150px auto 0;
+  }
 }
 
 @media screen and (min-width: 1060px) {
