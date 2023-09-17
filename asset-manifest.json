@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/AutoRent/static/css/main.cbac47ec.css",
-    "main.js": "/AutoRent/static/js/main.33c32cae.js",
-    "static/css/860.95141762.chunk.css": "/AutoRent/static/css/860.95141762.chunk.css",
-    "static/js/860.0b67fe25.chunk.js": "/AutoRent/static/js/860.0b67fe25.chunk.js",
+    "main.js": "/AutoRent/static/js/main.c9a6a96b.js",
+    "static/css/860.505a96d3.chunk.css": "/AutoRent/static/css/860.505a96d3.chunk.css",
+    "static/js/860.4ce4ca0e.chunk.js": "/AutoRent/static/js/860.4ce4ca0e.chunk.js",
     "static/css/198.6388255b.chunk.css": "/AutoRent/static/css/198.6388255b.chunk.css",
     "static/js/198.0bc3da59.chunk.js": "/AutoRent/static/js/198.0bc3da59.chunk.js",
     "static/css/5.8c435510.chunk.css": "/AutoRent/static/css/5.8c435510.chunk.css",
@@ -17,9 +17,9 @@
     "static/media/close_btn.svg": "/AutoRent/static/media/close_btn.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
     "static/media/chevron-down.svg": "/AutoRent/static/media/chevron-down.acec82c065a878183a50b50d2e2da886.svg",
     "main.cbac47ec.css.map": "/AutoRent/static/css/main.cbac47ec.css.map",
-    "main.33c32cae.js.map": "/AutoRent/static/js/main.33c32cae.js.map",
-    "860.95141762.chunk.css.map": "/AutoRent/static/css/860.95141762.chunk.css.map",
-    "860.0b67fe25.chunk.js.map": "/AutoRent/static/js/860.0b67fe25.chunk.js.map",
+    "main.c9a6a96b.js.map": "/AutoRent/static/js/main.c9a6a96b.js.map",
+    "860.505a96d3.chunk.css.map": "/AutoRent/static/css/860.505a96d3.chunk.css.map",
+    "860.4ce4ca0e.chunk.js.map": "/AutoRent/static/js/860.4ce4ca0e.chunk.js.map",
     "198.6388255b.chunk.css.map": "/AutoRent/static/css/198.6388255b.chunk.css.map",
     "198.0bc3da59.chunk.js.map": "/AutoRent/static/js/198.0bc3da59.chunk.js.map",
     "5.8c435510.chunk.css.map": "/AutoRent/static/css/5.8c435510.chunk.css.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.cbac47ec.css",
-    "static/js/main.33c32cae.js"
+    "static/js/main.c9a6a96b.js"
   ]
 }
