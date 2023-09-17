@@ -1,29 +1,21 @@
-import { Suspense } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Suspense, useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import Sidebar from 'components/Sidebar/Sidebar';
 import Loader from 'components/Loader/Loader';
+import css from './Layout.module.css';
 
 const Layout = () => {
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
   return (
-    <>
-      <aside>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/catalog">Catalog</NavLink>
-          </li>
-          <li>
-            <NavLink to="/favorites">Favorites</NavLink>
-          </li>
-        </ul>
-      </aside>
-      <main>
+    <div className={css.layout}>
+      <Sidebar isActive={isSidebarVisible} setToggle={setIsSidebarVisible} />
+      <main className={css.main}>
         <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
       </main>
-    </>
+    </div>
   );
 };
 

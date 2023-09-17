@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <header>
-        <h1>Welcome to car rental in Ukraine</h1>
+        <h1>Your Journey Begins Here with AutoRent</h1>
       </header>
       <main>
         <section>

@@ -1,4 +1,7 @@
-import { formattedCityAddress, formattedCountryAddress } from 'components/utils/format';
+import {
+  formattedCityAddress,
+  formattedCountryAddress,
+} from 'components/utils/format';
 import FavoriteBtn from 'components/FavoriteBtn/FavoriteBtn';
 import css from './AdvertCard.module.css';
 
