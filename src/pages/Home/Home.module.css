@@ -27,6 +27,7 @@
 }
 
 .carImage {
+  display: none;
   position: absolute;
   right: 10%;
   bottom: 8%;
@@ -36,6 +37,12 @@
   opacity: 0.4;
 
   z-index: -100;
+}
+
+@media screen and (min-width: 768px) {
+  .carImage {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1440px) {

@@ -49,6 +49,3 @@ To run a production build, run the command:
 ```sh
 npm run build
 ```
-## Developer
-
-[Stanislav Zhuk](https://www.linkedin.com/in/stanislavzhuk/)

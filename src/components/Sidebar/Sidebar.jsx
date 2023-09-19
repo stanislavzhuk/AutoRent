@@ -38,13 +38,13 @@ const Sidebar = ({ isActive, setToggle }) => {
         ref={menuRef}
       >
         <nav className={css.navBar}>
-          <NavLink className="button-primary" to="/">
+          <NavLink className="button-primary" to="/" onClick={() => setToggle(prev => !prev)}>
             Home
           </NavLink>
-          <NavLink className="button-primary" to="/catalog">
+          <NavLink className="button-primary" to="/catalog" onClick={() => setToggle(prev => !prev)}>
             Catalog
           </NavLink>
-          <NavLink className="button-primary" to="/favorites">
+          <NavLink className="button-primary" to="/favorites" onClick={() => setToggle(prev => !prev)}>
             Favorites
           </NavLink>
         </nav>
