@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/AutoRent/static/css/main.cbac47ec.css",
-    "main.js": "/AutoRent/static/js/main.8c84d274.js",
-    "static/css/860.505a96d3.chunk.css": "/AutoRent/static/css/860.505a96d3.chunk.css",
+    "main.js": "/AutoRent/static/js/main.fcc41b5a.js",
+    "static/css/860.52aa113c.chunk.css": "/AutoRent/static/css/860.52aa113c.chunk.css",
     "static/js/860.4ce4ca0e.chunk.js": "/AutoRent/static/js/860.4ce4ca0e.chunk.js",
-    "static/css/198.6388255b.chunk.css": "/AutoRent/static/css/198.6388255b.chunk.css",
+    "static/css/198.f19690ce.chunk.css": "/AutoRent/static/css/198.f19690ce.chunk.css",
     "static/js/198.0bc3da59.chunk.js": "/AutoRent/static/js/198.0bc3da59.chunk.js",
-    "static/css/5.8c435510.chunk.css": "/AutoRent/static/css/5.8c435510.chunk.css",
+    "static/css/5.7445646d.chunk.css": "/AutoRent/static/css/5.7445646d.chunk.css",
     "static/js/5.98b523ed.chunk.js": "/AutoRent/static/js/5.98b523ed.chunk.js",
     "static/js/579.d939a811.chunk.js": "/AutoRent/static/js/579.d939a811.chunk.js",
     "static/js/270.a6832161.chunk.js": "/AutoRent/static/js/270.a6832161.chunk.js",
@@ -17,18 +17,18 @@
     "static/media/close_btn.svg": "/AutoRent/static/media/close_btn.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
     "static/media/chevron-down.svg": "/AutoRent/static/media/chevron-down.acec82c065a878183a50b50d2e2da886.svg",
     "main.cbac47ec.css.map": "/AutoRent/static/css/main.cbac47ec.css.map",
-    "main.8c84d274.js.map": "/AutoRent/static/js/main.8c84d274.js.map",
-    "860.505a96d3.chunk.css.map": "/AutoRent/static/css/860.505a96d3.chunk.css.map",
+    "main.fcc41b5a.js.map": "/AutoRent/static/js/main.fcc41b5a.js.map",
+    "860.52aa113c.chunk.css.map": "/AutoRent/static/css/860.52aa113c.chunk.css.map",
     "860.4ce4ca0e.chunk.js.map": "/AutoRent/static/js/860.4ce4ca0e.chunk.js.map",
-    "198.6388255b.chunk.css.map": "/AutoRent/static/css/198.6388255b.chunk.css.map",
+    "198.f19690ce.chunk.css.map": "/AutoRent/static/css/198.f19690ce.chunk.css.map",
     "198.0bc3da59.chunk.js.map": "/AutoRent/static/js/198.0bc3da59.chunk.js.map",
-    "5.8c435510.chunk.css.map": "/AutoRent/static/css/5.8c435510.chunk.css.map",
+    "5.7445646d.chunk.css.map": "/AutoRent/static/css/5.7445646d.chunk.css.map",
     "5.98b523ed.chunk.js.map": "/AutoRent/static/js/5.98b523ed.chunk.js.map",
     "579.d939a811.chunk.js.map": "/AutoRent/static/js/579.d939a811.chunk.js.map",
     "270.a6832161.chunk.js.map": "/AutoRent/static/js/270.a6832161.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbac47ec.css",
-    "static/js/main.8c84d274.js"
+    "static/js/main.fcc41b5a.js"
   ]
 }
