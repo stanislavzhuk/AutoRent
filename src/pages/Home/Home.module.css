@@ -30,7 +30,7 @@
   display: none;
   position: absolute;
   right: 10%;
-  bottom: 8%;
+  top: 30%;
   width: 60%;
 
   filter: drop-shadow(0 2mm 1mm rgba(54, 54, 55, 0.5));
@@ -42,12 +42,6 @@
 @media screen and (min-width: 768px) {
   .carImage {
     display: block;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .carImage {
-    opacity: 1;
   }
 }
 

@@ -17,7 +17,7 @@
 .modal {
   max-width: calc(100vw - 20px);
   max-height: calc(100vh - 20px);
-  
+
   overflow: hidden auto;
   z-index: 1100;
 
@@ -27,7 +27,7 @@
 @media screen and (min-width: 375px) {
   .modal {
     max-width: calc(100vw - 48px);
-    max-height: calc(100vh - 24px);  
+    max-height: calc(100vh - 24px);
   }
 }
 
@@ -49,7 +49,7 @@
 @media screen and (min-width: 768px) {
   .modalCard {
     padding: 40px;
-    width: 541px;  
+    width: 541px;
   }
 }
 
@@ -68,7 +68,7 @@
 @media screen and (min-width: 375px) {
   .closeBtn {
     right: 16px;
-    top: 16px; 
+    top: 16px;
     padding: 2px;
   }
 }

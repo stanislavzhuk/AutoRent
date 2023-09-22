@@ -7,7 +7,7 @@ import {
   formattedCountryAddress,
   formattedMileage,
   formattedRentalPrice,
-} from 'components/utils/format';
+} from '../../utils/format';
 import closeBtn from '../../assets/close_btn.svg';
 import css from './PopUpModal.module.css';
 
