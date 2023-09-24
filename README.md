@@ -1,22 +1,32 @@
-#  [AutoRent React WebApp](https://stanislavzhuk.github.io/AutoRent/)
+# [AutoRent React WebApp](https://stanislavzhuk.github.io/AutoRent/)
 
-The "AutoRent" project is an online platform for searching and renting cars. It enables users to quickly find and rent a car from different manufacturers and at different prices. The project simplifies the process of renting a car and provides a convenient search based on various criteria.
+<img src="./assets/home-page.png" alt="Home page">
 
-##  Main features of the project
+AutoRent is a web application for searching and renting cars, which allows users to quickly find and rent vehicles from various manufacturers and at different price points. With our user-friendly platform, you can browse through a wide selection of car options, discover the perfect vehicle to meet your needs, and even save your favorite listings for future reference. Whether you require a car for a business trip, a family vacation, or simply for your daily commute, our service has got you covered.
 
-###  1. Backend:  
-- **The project uses a backend built using [MockAPI](https://mockapi.io/) as a database.** 
+## Features
 
-###  2. Frontend:  
-- **The project's front-end leverages [React](https://react.dev/) for robust state management, ensuring a smooth user experience. It employs a component-based approach, with a wide range of modules used across the site, enabling straightforward and scalable interface management.**
+### Explore and Search
 
-###  3. Main features
+<img src="./assets/search.png" alt="Search">
 
-- **Advanced Car Search: Users can easily find car rental offers by specifying criteria like mileage, model name, and more.**
-- **Favorites List: Keep track of preferred cars by adding them to your favorites list for quick access and future reference.**
-- **Convenient Sidebar: Navigate the website effortlessly with an intuitive sidebar, providing quick access to essential sections.**
+- Browse through a diverse selection of cars, including sedans, SUVs, vans, and more.
+- Use search filters to quickly find cars that match your preferences, such as make, model, year, and rental price.
 
-##  [Technologies](https://github.com/stanislavzhuk/AutoRent)
+### Save to Favorites
+
+<img src="./assets/favorite-page.png" alt="Favorite page">
+
+- Create a list of your favorite car listings.
+- Easily access and compare your saved options.
+
+### Booking and Reservations
+
+<img src="./assets/booking.png" alt="Booking and Reservations">
+
+- Reserve your chosen car directly from the platform.
+
+## Technologies
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -24,28 +34,15 @@ The "AutoRent" project is an online platform for searching and renting cars. It 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-##  Development
+## Getting Started
 
-###  1. Requirements
-[NodeJS](https://nodejs.org/) v8+ is required to install and run the project.
+To get started with AutoRent, follow these steps:
 
-###  2. Installing dependencies
-To install dependencies, run the command:
+1. Before you begin, make sure you have [Node.js](https://nodejs.org/) version 8 or higher installed on your machine.
+2. Clone this repository to your local machine.
+3. Install the necessary dependencies by running `npm install` or `yarn install`.
+4. Start the development server and run the application locally, use the following command `npm start` or `yarn start`.
 
-```sh
-$ npm i
-```
+## Contact Us
 
-###  3. Starting the Development server
-To start the development server, run the command:
-
-```sh
-npm start
-```
-
-###  4. Creating a build
-To run a production build, run the command:
-
-```sh
-npm run build
-```
+If you have any questions, suggestions, or need assistance, feel free to contact our support team at stanislavzhuk.dev@gmail.com.
