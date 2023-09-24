@@ -21,7 +21,7 @@ const AdvertCard = ({ advert, openModal, isChanged }) => {
   } = advert;
 
   return (
-    <li className={css.cardItem} title={`${accessories.join('\n')}`}>
+    <li className={css.cardItem}>
       <div className={css.imageContainer}>
         <img
           className={css.image}
