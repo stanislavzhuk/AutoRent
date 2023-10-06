@@ -28,14 +28,14 @@ const SearchBar = ({ onSearch }) => {
     });
   };
 
-  const handleReset = () => {
-    setData(initialData);
-    onSearch(initialData);
-  };
-
   const handleSubmit = e => {
     e.preventDefault();
     onSearch(data);
+  };
+
+  const handleReset = () => {
+    setData(initialData);
+    onSearch(initialData);
   };
 
   return (
@@ -49,7 +49,7 @@ const SearchBar = ({ onSearch }) => {
           closeMenuOnSelect={false}
           placeholder="Enter the text"
           onChange={e => handleChange('make', e.value)}
-          value={data.make === "" ? "" : { value: data.make, label: data.make }}
+          value={data.make === '' ? '' : { value: data.make, label: data.make }}
         />
       </label>
       <label className={css.label}>
@@ -61,7 +61,11 @@ const SearchBar = ({ onSearch }) => {
           closeMenuOnSelect={false}
           placeholder={'To'}
           onChange={e => handleChange('rentalPrice', e.value)}
-          value={data.rentalPrice === "" ? "" : { value: data.rentalPrice, label: data.rentalPrice }}
+          value={
+            data.rentalPrice === ''
+              ? ''
+              : { value: data.rentalPrice, label: data.rentalPrice }
+          }
         />
       </label>
       <label className={css.label}>

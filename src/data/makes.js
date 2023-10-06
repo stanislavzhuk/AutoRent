@@ -37,3 +37,18 @@ export const brandOptions = data.map(brand => ({
   value: brand,
   label: brand,
 }));
+
+const uniqueMakes = new Set();
+
+export const modelOptions = data =>
+  data
+    .filter(item => {
+      const make = item.make;
+      if (!uniqueMakes.has(make)) {
+        uniqueMakes.add(make);
+        return true;
+      }
+      return false;
+    })
+    .map(item => ({ label: item.make, value: item.make }))
+    .sort((a, b) => (a.label.toLowerCase() < b.label.toLowerCase() ? -1 : 1));
